@@ -2,12 +2,26 @@ html, body {
   background: #ffffff;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden !important;
   height: 100%;
   width: 100%;
   position: fixed;
   touch-action: none;
+  overscroll-behavior: none;
   -webkit-overflow-scrolling: none;
+}
+
+/* Lock all Quarto wrappers */
+#quarto-content,
+#quarto-document-content,
+.quarto-container,
+.page-columns,
+.content {
+  overflow: hidden !important;
+  height: 100% !important;
+  max-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Hide all Quarto chrome */

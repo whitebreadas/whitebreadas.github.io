@@ -1,0 +1,13 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "White Bread AS"
+  navbar: false
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    minimal: true

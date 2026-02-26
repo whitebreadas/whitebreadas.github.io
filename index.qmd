@@ -1,0 +1,8 @@
+---
+title: ""
+title-block-banner: false
+---
+
+::: {.logo-container}
+![](black.png){.logo}
+:::

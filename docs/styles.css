@@ -2,6 +2,11 @@ body {
   background: #ffffff;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
 }
 
 /* Hide all Quarto chrome */
@@ -17,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .logo-container p {

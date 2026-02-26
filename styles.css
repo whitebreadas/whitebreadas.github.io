@@ -35,6 +35,11 @@ html, body {
   margin: 0;
 }
 
+.logo-container a {
+  text-decoration: none;
+  cursor: default;
+}
+
 .logo {
   width: 300px;
   max-width: 80vw;

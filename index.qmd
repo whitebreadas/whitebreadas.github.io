@@ -5,4 +5,6 @@ title-block-banner: false
 
 ::: {.logo-container}
 [![](black.png){.logo}](https://www.rwhite.no)
+
+[richard@whitebread.no](mailto:richard@whitebread.no){.email}
 :::

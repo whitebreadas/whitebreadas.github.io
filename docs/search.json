@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "White Bread AS",
+    "section": "",
+    "text": "richard@whitebread.no"
+  },
+  {
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "CLAUDE.md — whitebreadas.github.io",
+    "section": "",
+    "text": "Minimal Quarto website for White Bread AS. Single landing page showing the logo, nothing else. Deployed to GitHub Pages from the docs/ folder on main.\n\n\n\n\n_quarto.yml — Quarto config (outputs to docs/, no navbar, flatly theme)\nindex.qmd — Landing page (logo only, hidden link to www.rwhite.no)\nstyles.css — Hides all Quarto chrome, centers logo, disables scrolling\nblack.png / brown.png — Logo variants\ndeploy.sh — Renders, commits docs/, and pushes to main\ndocs/ — Rendered output (served by GitHub Pages, do not edit by hand)\n\n\n\n\nRun ./deploy.sh from the repo root. Or manually:\nquarto render .\ngit add docs && git commit -m \"docs commit\"\ngit push origin main:main\n\n\n\n\nNo scrolling: The page is fully locked (position: fixed, overflow: hidden, overscroll-behavior: none on html/body and all Quarto wrapper divs). This was needed for Safari compatibility — overflow: hidden alone is not enough.\nHidden link: The logo links to www.rwhite.no but has no visible link styling (cursor: default, no underline).\nNo navbar/footer/title: All Quarto chrome is hidden via CSS.\n\n\n\n\n\nAfter any content or style change, always render and verify the docs/ output before committing.\nDo not add a navbar, footer, or title block — this is intentionally a logo-only page.\nTest in both Chrome and Safari after CSS changes (Safari handles overflow differently)."
+  },
+  {
+    "objectID": "CLAUDE.html#what-this-is",
+    "href": "CLAUDE.html#what-this-is",
+    "title": "CLAUDE.md — whitebreadas.github.io",
+    "section": "",
+    "text": "Minimal Quarto website for White Bread AS. Single landing page showing the logo, nothing else. Deployed to GitHub Pages from the docs/ folder on main."
+  },
+  {
+    "objectID": "CLAUDE.html#project-structure",
+    "href": "CLAUDE.html#project-structure",
+    "title": "CLAUDE.md — whitebreadas.github.io",
+    "section": "",
+    "text": "_quarto.yml — Quarto config (outputs to docs/, no navbar, flatly theme)\nindex.qmd — Landing page (logo only, hidden link to www.rwhite.no)\nstyles.css — Hides all Quarto chrome, centers logo, disables scrolling\nblack.png / brown.png — Logo variants\ndeploy.sh — Renders, commits docs/, and pushes to main\ndocs/ — Rendered output (served by GitHub Pages, do not edit by hand)"
+  },
+  {
+    "objectID": "CLAUDE.html#deployment",
+    "href": "CLAUDE.html#deployment",
+    "title": "CLAUDE.md — whitebreadas.github.io",
+    "section": "",
+    "text": "Run ./deploy.sh from the repo root. Or manually:\nquarto render .\ngit add docs && git commit -m \"docs commit\"\ngit push origin main:main"
+  },
+  {
+    "objectID": "CLAUDE.html#key-decisions",
+    "href": "CLAUDE.html#key-decisions",
+    "title": "CLAUDE.md — whitebreadas.github.io",
+    "section": "",
+    "text": "No scrolling: The page is fully locked (position: fixed, overflow: hidden, overscroll-behavior: none on html/body and all Quarto wrapper divs). This was needed for Safari compatibility — overflow: hidden alone is not enough.\nHidden link: The logo links to www.rwhite.no but has no visible link styling (cursor: default, no underline).\nNo navbar/footer/title: All Quarto chrome is hidden via CSS."
+  },
+  {
+    "objectID": "CLAUDE.html#rules",
+    "href": "CLAUDE.html#rules",
+    "title": "CLAUDE.md — whitebreadas.github.io",
+    "section": "",
+    "text": "After any content or style change, always render and verify the docs/ output before committing.\nDo not add a navbar, footer, or title block — this is intentionally a logo-only page.\nTest in both Chrome and Safari after CSS changes (Safari handles overflow differently)."
+  }
+]

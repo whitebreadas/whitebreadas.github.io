@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>White Bread AS</title>
+<title>claude – White Bread AS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,12 +82,49 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="logo-container">
-<p><a href="https://www.rwhite.no"><img src="black.png" class="logo"></a></p>
-<p><a href="mailto:richard@whitebread.no" class="email">richard@whitebread.no</a></p>
-</div>
+<section id="claude.md-whitebreadas.github.io" class="level1">
+<h1>CLAUDE.md — whitebreadas.github.io</h1>
+<section id="what-this-is" class="level2">
+<h2 data-anchor-id="what-this-is">What this is</h2>
+<p>Minimal Quarto website for White Bread AS. Single landing page showing the logo, nothing else. Deployed to GitHub Pages from the <code>docs/</code> folder on <code>main</code>.</p>
+</section>
+<section id="project-structure" class="level2">
+<h2 data-anchor-id="project-structure">Project structure</h2>
+<ul>
+<li><code>_quarto.yml</code> — Quarto config (outputs to <code>docs/</code>, no navbar, flatly theme)</li>
+<li><code>index.qmd</code> — Landing page (logo only, hidden link to www.rwhite.no)</li>
+<li><code>styles.css</code> — Hides all Quarto chrome, centers logo, disables scrolling</li>
+<li><code>black.png</code> / <code>brown.png</code> — Logo variants</li>
+<li><code>deploy.sh</code> — Renders, commits <code>docs/</code>, and pushes to main</li>
+<li><code>docs/</code> — Rendered output (served by GitHub Pages, do not edit by hand)</li>
+</ul>
+</section>
+<section id="deployment" class="level2">
+<h2 data-anchor-id="deployment">Deployment</h2>
+<p>Run <code>./deploy.sh</code> from the repo root. Or manually:</p>
+<pre><code>quarto render .
+git add docs &amp;&amp; git commit -m "docs commit"
+git push origin main:main</code></pre>
+</section>
+<section id="key-decisions" class="level2">
+<h2 data-anchor-id="key-decisions">Key decisions</h2>
+<ul>
+<li><strong>No scrolling</strong>: The page is fully locked (<code>position: fixed</code>, <code>overflow: hidden</code>, <code>overscroll-behavior: none</code> on html/body and all Quarto wrapper divs). This was needed for Safari compatibility — <code>overflow: hidden</code> alone is not enough.</li>
+<li><strong>Hidden link</strong>: The logo links to www.rwhite.no but has no visible link styling (<code>cursor: default</code>, no underline).</li>
+<li><strong>No navbar/footer/title</strong>: All Quarto chrome is hidden via CSS.</li>
+</ul>
+</section>
+<section id="rules" class="level2">
+<h2 data-anchor-id="rules">Rules</h2>
+<ul>
+<li>After any content or style change, always render and verify the <code>docs/</code> output before committing.</li>
+<li>Do not add a navbar, footer, or title block — this is intentionally a logo-only page.</li>
+<li>Test in both Chrome and Safari after CSS changes (Safari handles overflow differently).</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 </div> <!-- /content -->

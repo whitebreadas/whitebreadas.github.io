@@ -36,6 +36,7 @@ html, body {
 /* Center the logo on the page */
 .logo-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -58,4 +59,16 @@ html, body {
   width: 300px;
   max-width: 80vw;
   height: auto;
+}
+
+.email {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #999;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.email:hover {
+  color: #666;
 }

@@ -1,10 +1,18 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - og-image.png
+    - CNAME
 
 website:
   title: "White Bread AS"
+  site-url: https://www.whitebread.no
   navbar: false
+  open-graph:
+    title: "White Bread AS"
+    image: og-image.png
+    description: "White Bread AS"
 
 format:
   html:

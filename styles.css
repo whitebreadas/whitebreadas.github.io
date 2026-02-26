@@ -62,13 +62,9 @@ html, body {
 }
 
 .email {
-  margin-top: 1.5rem;
+  display: block;
+  margin-top: 3rem;
   font-size: 0.85rem;
-  color: #999;
-  text-decoration: none;
+  color: #000;
   letter-spacing: 0.02em;
-}
-
-.email:hover {
-  color: #666;
 }
